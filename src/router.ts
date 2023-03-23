@@ -2,12 +2,19 @@ import { Router } from "express";
 
 import { listCategories } from "./app/useCases/categories/listCategories";
 import { createCategory } from "./app/useCases/categories/createCategory";
+
 import { listProducts } from "./app/useCases/products/listProducts";
+import { createProduct } from "./app/useCases/products/createProduct";
 
 export const router = Router();
 
 // List categories
 router.get("/categories", listCategories);
+
+// Get products by category
+router.get("/categories/:categoryId/products", (req, res) => {
+  res.send("Ok");
+});
 
 // Create categories
 router.post("/categories", createCategory);
@@ -16,14 +23,7 @@ router.post("/categories", createCategory);
 router.get("/products", listProducts);
 
 // Create products
-router.post("/products", (req, res) => {
-  res.send("Ok");
-});
-
-// Get products by category
-router.get("/categories/:categoryId/products", (req, res) => {
-  res.send("Ok");
-});
+router.post("/products", createProduct);
 
 // List orders
 router.get("/orders", (req, res) => {
