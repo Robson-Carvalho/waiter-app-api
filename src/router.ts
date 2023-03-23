@@ -11,6 +11,7 @@ import { listProducts } from "./app/useCases/products/listProducts";
 import { createProduct } from "./app/useCases/products/createProduct";
 
 import { listOrders } from "./app/useCases/orders/listOrders";
+import { createOrder } from "./app/useCases/orders/createOrder";
 
 export const router = Router();
 
@@ -44,9 +45,7 @@ router.post("/products", upload.single("image"), createProduct);
 router.get("/orders", listOrders);
 
 // Create order
-router.post("/orders", (req, res) => {
-  res.send("Ok");
-});
+router.post("/orders", createOrder);
 
 // Change order status
 router.patch("/orders/:orderId", (req, res) => {
