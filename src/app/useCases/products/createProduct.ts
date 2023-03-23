@@ -12,7 +12,7 @@ export const createProduct = async (req: Request, res: Response) => {
       description,
       price: Number(price),
       category,
-      ingredients: JSON.parse(ingredients),
+      ingredients: ingredients ? JSON.parse(ingredients) : [],
       imagePath,
     });
 
