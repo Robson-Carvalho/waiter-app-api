@@ -13,7 +13,7 @@ mongoose
     app.use(express.json());
     app.use(router);
 
-    const port = 3001;
+    const port = process.env.PORT || 3001;
     app.listen(port, () => {
       console.log(
         `✅ Server connected to mongoDB Atlas successfully \n🚀 Server is running on http://localhost:${port}`
