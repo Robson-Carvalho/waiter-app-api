@@ -9,7 +9,7 @@ mongoose
   )
   .then(() => {
     const app = express();
-
+    app.use(express.static("uploads"));
     app.use(express.json());
     app.use(router);
 
