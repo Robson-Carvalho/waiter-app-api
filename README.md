@@ -16,9 +16,9 @@
 
 <br>
 
-## 🧪 Technologies
+## 🧪 Tecnologias
 
-This project was developed using the following technologies:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [Node.Js](https://nodejs.org/en)
 - [Express.Js](https://expressjs.com/)
@@ -26,36 +26,44 @@ This project was developed using the following technologies:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Mongoose](https://mongoosejs.com/)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Git](https://git-scm.com/)
 
-## 🚀 Getting started
+## 🚀 Executando projeto
 
-Clone the project and access the folder.
+Clone o projeto.
 
 ```bash
 git clone https://github.com/Robson-Carvalho/waiter-app-api.git
+```
+
+Acsse a pasta do projeto clonado.
+
+```bash
 cd waiter-app-api
 ```
 
-Run this command to install the dependencies.
+Execute o comando abaixo para baixar as dependências do projeto.
 
 ```bash
 npm install
 ```
 
+Execute o comando abaixo para rodar o projeto.
+
 ```
 npm start
 ```
 
-## 📖 Description
+## 📖 Descrição do projeto
 
-The Waiter-App-API is an API developed in Node.js that was created to manage the ordering process in a restaurant. The purpose of the API is to provide an easy-to-use interface for customers to place orders and for restaurant staff to manage those orders.
+A Waiter-App-API é uma API desenvolvida em Node.js que foi criada para gerenciar o processo de pedidos em um restaurante. O objetivo da API é fornecer uma interface fácil de usar para os clientes fazerem pedidos e para a equipe do restaurante gerenciar esses pedidos.
 
-The API was built using the Express.js framework, which is a popular choice for building APIs in Node.js. In addition, the API uses the MongoDB database to store order information.
+A API foi criada usando a estrutura Express.js, que é uma escolha popular para criar APIs em Node.js. Além disso, a API usa o banco de dados MongoDB para armazenar as informações do pedido.
 
-## 📝 License
+## 📝 Licença
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-Made with 💜 by [Robson Carvalho](https://portfolio-robson-carvalho.vercel.app/) 👋
+Feito com 💜 por [Robson Carvalho](https://portfolio-robson-carvalho.vercel.app/) 👋
